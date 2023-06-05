@@ -2,7 +2,7 @@ header {
 
     background-image: url("../img/tony-lee-8IKf54pc3qk-unsplash.jpg");
     width: 100vw;
-    height: 46.875vw;
+    height: 100vh;
     background-size: cover;
     position: relative;
 
@@ -13,8 +13,11 @@ header {
         text-align: left;
         color: #fff;
         position: absolute;
-        top: 18.4375vw;
-        left: 31.796875vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
     }
 
     nav ul li {
@@ -25,19 +28,10 @@ header {
         text-shadow: 1px 1px 2px rgba(18, 18, 18, 0.16);
     }
 
-    .nav_menu {
-        position: absolute;
-        top: 1.5625vw;
-        right: 17.421875vw;
-    }
-
-    .nav_about {
-        position: absolute;
-        top: 1.5625vw;
-        right: 11.328125vw;
-    }
-
-    .nav_location {
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 17.265625vw;
         position: absolute;
         top: 1.5625vw;
         right: 3.4375vw;
