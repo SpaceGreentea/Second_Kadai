@@ -1,0 +1,65 @@
+@mixin sp {
+    @media(max-width: 767px) {
+        @content;
+    }
+}
+
+.menu {
+    position: relative;
+
+    .menu_parallax {
+        height: 23.4375vw;
+        position: relative;
+
+        h2 {
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 5.625vw;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+    }
+
+    .menu_parallax::before{
+        background-image: url("../img/nathan-dumlao-KixfBEdyp64-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .menu_list_area {
+        height: 69.21875vw;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+
+        .coffee_menu {
+
+            h3 {
+                font-family: Arial;
+                font-weight: bold;
+                font-size: 3.125vw;
+                color: #000;
+                background: linear-gradient(transparent 85%, #e03131 85%);
+                padding-bottom: 1.328125vw;
+                position: relative;
+                top: 7.5vw;
+                left: 25.546875vw;
+            }
+        }
+    }
+
+}
+

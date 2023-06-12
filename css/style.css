@@ -5,6 +5,7 @@ header {
   height: 100vh;
   background-size: cover;
   position: relative;
+  margin-bottom: 1.5625vw;
 }
 header h1 {
   font-family: Arial;
@@ -19,17 +20,23 @@ header h1 {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 22.5333333333vw;
+  }
+}
 header nav ul li {
   font-family: Meiryo;
   font-weight: bold;
   font-size: 1.125vw;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(18, 18, 18, 0.16);
+  padding-right: 2.109375vw;
 }
 header nav ul {
   display: flex;
-  justify-content: space-between;
-  width: 17.265625vw;
+  justify-content: right;
+  width: 100%;
   position: absolute;
   top: 1.5625vw;
   right: 3.4375vw;
@@ -39,6 +46,56 @@ header a {
 }
 header a:hover {
   color: red;
+}
+
+.menu {
+  position: relative;
+}
+.menu .menu_parallax {
+  height: 23.4375vw;
+  position: relative;
+}
+.menu .menu_parallax h2 {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 5.625vw;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.menu .menu_parallax::before {
+  background-image: url("../img/nathan-dumlao-KixfBEdyp64-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.menu .menu_list_area {
+  height: 69.21875vw;
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+}
+.menu .menu_list_area .coffee_menu h3 {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 3.125vw;
+  color: #000;
+  background: linear-gradient(transparent 85%, #e03131 85%);
+  padding-bottom: 1.328125vw;
+  position: relative;
+  top: 7.5vw;
+  left: 25.546875vw;
 }
 
 body {
