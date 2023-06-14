@@ -9,7 +9,16 @@
 
     .menu_parallax {
         height: 23.4375vw;
+        background-image: url("../img/nathan-dumlao-KixfBEdyp64-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
         position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
 
         h2 {
             font-family: Arial;
@@ -23,20 +32,6 @@
             -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
         }
-    }
-
-    .menu_parallax::before{
-        background-image: url("../img/nathan-dumlao-KixfBEdyp64-unsplash.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        content: "";
-        height: 100vh;
-        left: 0;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: -1;
     }
 
     .menu_list_area {
@@ -57,6 +52,66 @@
                 position: relative;
                 top: 7.5vw;
                 left: 25.546875vw;
+                display: inline-block;
+            }
+
+            .menu_list_left {
+                position: absolute;
+                top: 18.046875vw;
+                left: 16.484375vw;
+            }
+
+            .menu_list {
+                display: flex;
+            }
+
+            .menu_dotted {
+                border-bottom: dotted 1px #000;
+                width: 26.640625vw;
+                padding-bottom: 0.4296875vw;
+                margin-bottom: 2.3828125vw;
+
+                font-family: Meiryo;
+                font-weight: normal;
+                font-size: 1.125vw;
+                color: #383e45;
+            }
+
+            .menu_price {
+                margin-top: 3px;
+                margin-left: 1.2109375vw;
+
+                font-family: Meiryo;
+                font-weight: normal;
+                font-size: 1.125vw;
+                color: #383e45;
+
+            }
+        }
+
+        .coffee_menu_centerline {
+            width: 1px;
+            height: 50.5078125vw;
+            background: transparent;
+            border: 1px solid #000;
+            position: absolute;
+            top: 7.03125vw;
+            left: 50.7421875vw;
+        }
+        
+        .food_menu {
+
+            h3 {
+                font-family: Arial;
+                font-weight: bold;
+                font-size: 3.125vw;
+                color: #000;
+                background: linear-gradient(transparent 85%, #e03131 85%);
+                padding-bottom: 1.328125vw;
+                position: relative;
+                top: 7.5vw;
+                left: 64.921875vw;
+                display: inline-block;
             }
         }
     }
