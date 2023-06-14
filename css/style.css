@@ -1,7 +1,7 @@
 @charset "UTF-8";
 header {
   background-image: url("../img/tony-lee-8IKf54pc3qk-unsplash.jpg");
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-size: cover;
   position: relative;
@@ -48,15 +48,13 @@ header a:hover {
   color: red;
 }
 
-.menu {
-  position: relative;
-}
 .menu .menu_parallax {
   height: 23.4375vw;
   background-image: url("../img/nathan-dumlao-KixfBEdyp64-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   content: "";
   position: relative;
   left: 0;
@@ -79,8 +77,8 @@ header a:hover {
 .menu .menu_list_area {
   height: 69.21875vw;
   background-color: #fff;
-  width: 100%;
-  position: absolute;
+  display: flex;
+  margin-top: 7.5vw;
 }
 .menu .menu_list_area .coffee_menu h3 {
   font-family: Arial;
@@ -89,17 +87,14 @@ header a:hover {
   color: #000;
   background: linear-gradient(transparent 85%, #e03131 85%);
   padding-bottom: 1.328125vw;
-  position: relative;
-  top: 7.5vw;
-  left: 25.546875vw;
   display: inline-block;
+  margin-left: 25.546875vw;
 }
 .menu .menu_list_area .coffee_menu .menu_list_left {
-  position: absolute;
-  top: 18.046875vw;
-  left: 16.484375vw;
+  margin-left: 16.484375vw;
+  margin-top: 5.78125vw;
 }
-.menu .menu_list_area .coffee_menu .menu_list {
+.menu .menu_list_area .coffee_menu .menu_name_price {
   display: flex;
 }
 .menu .menu_list_area .coffee_menu .menu_dotted {
@@ -124,22 +119,50 @@ header a:hover {
   width: 1px;
   height: 50.5078125vw;
   background: transparent;
-  border: 1px solid #000;
-  position: absolute;
-  top: 7.03125vw;
-  left: 50.7421875vw;
+  border-right: 1px solid #000;
+  margin-left: 3.8671875vw;
 }
-.menu .menu_list_area .food_menu h3 {
+.menu .menu_list_area .food_other_menu h3 {
   font-family: Arial;
   font-weight: bold;
   font-size: 3.125vw;
   color: #000;
   background: linear-gradient(transparent 85%, #e03131 85%);
   padding-bottom: 1.328125vw;
-  position: relative;
-  top: 7.5vw;
-  left: 64.921875vw;
   display: inline-block;
+  margin-left: 14.1796875vw;
+}
+.menu .menu_list_area .food_other_menu .menu_list_right_top {
+  margin-left: 3.5546875vw;
+  margin-top: 5.78125vw;
+}
+.menu .menu_list_area .food_other_menu .menu_name_price {
+  display: flex;
+}
+.menu .menu_list_area .food_other_menu .menu_dotted {
+  border-bottom: dotted 1px #000;
+  width: 26.640625vw;
+  padding-bottom: 0.4296875vw;
+  margin-bottom: 2.3828125vw;
+  font-family: Meiryo;
+  font-weight: normal;
+  font-size: 1.125vw;
+  color: #383e45;
+}
+.menu .menu_list_area .food_other_menu .menu_price {
+  margin-top: 3px;
+  margin-left: 1.2109375vw;
+  font-family: Meiryo;
+  font-weight: normal;
+  font-size: 1.125vw;
+  color: #383e45;
+}
+.menu .menu_list_area .food_other_menu .menu_list_right_bottom {
+  margin-left: 3.5546875vw;
+  margin-top: 5.78125vw;
+}
+.menu .menu_list_area .food_other_menu .other {
+  margin-top: 5.15625vw;
 }
 
 body {
