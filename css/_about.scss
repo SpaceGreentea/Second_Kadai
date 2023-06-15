@@ -1,0 +1,157 @@
+@mixin sp {
+    @media(max-width: 767px) {
+        @content;
+    }
+}
+
+.about {
+    text-align: center;
+
+    .about_parallax {
+        height: 23.4375vw;
+        background-image: url("../img/jonathan-borba-vk2Xwf23rOQ-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        content: "";
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+        margin-bottom: 6.484375vw;
+
+        @include sp {
+            height: 25.066666666666667vw;
+        }
+
+        h2 {
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 5.625vw;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+
+            @include sp {
+                font-size: 8.533333333333333vw;
+            }
+        }
+    }
+
+    h3 {
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 3.125vw;
+        color: #000;
+        background: linear-gradient(transparent 85%, #e03131 85%);
+        padding-bottom: 1.328125vw;
+        display: inline-block;
+        margin-bottom: 6.953125vw;
+
+        @include sp {
+            font-size: 5.333333333333333vw;
+        }
+    }
+
+    .about_sentence_area {
+        width: 71.953125vw;
+        height: 30vw;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        @include sp {
+            width: 84.266666666666667vw;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .about_sentence {
+        width: 33.59375vw;
+        font-family: Meiryo;
+        font-weight: normal;
+        font-size: 1.125vw;
+        line-height: 2;
+        text-align: left;
+        color: #383e45;
+
+        @include sp {
+            width: 84.266666666666667vw;
+            font-size: 3.84vw;
+            margin-bottom: 5.333333333333333vw;
+        }
+    }
+
+    .about_button {
+        font-family: Meiryo;
+        font-weight: normal;
+        font-size: 1.125vw;
+        color: #383e45;
+        margin-bottom: 11.71875vw;
+
+        /*線の基点とするためrelativeを指定*/
+        position:relative;
+        /*ボタンの形状*/  
+        color:#383e45;
+        padding: 15px 35px;
+        display:inline-block;
+        text-decoration: none;
+        outline: none;
+
+        @include sp {
+            font-size: 3.84vw;
+            margin-bottom: 21.333333333333333vw;
+            padding: 30px 70px;
+        }
+    }
+
+    .about_button::before,
+    .about_button::after {
+        content:'';
+        /*絶対配置で線の位置を決める*/
+        position:absolute;
+        /*事前に出現させる線の形状*/
+        border:solid #e03131;
+        width:1.953125vw;
+        height:1.953125vw;
+        /*アニメーションの指定*/
+        transition:all 0.3s ease-in-out;
+
+        @include sp {
+            width: 8.533333333333333vw;
+            height: 6.666666666666667vw;
+        }
+    }
+
+    .about_button::before {
+        /*事前に出現させる線の位置*/
+        top:0;
+        left:0;
+        /*事前に出現させる線の形状*/
+        border-width:2px 0 0 2px;
+    }
+
+    .about_button::after {
+       /*事前に出現させる線の位置*/
+        bottom:0;
+        right:0;
+        /*事前に出現させる線の形状*/
+        border-width:0 2px 2px 0;
+    }
+
+    .about_button:hover::before,
+    .about_button:hover::after {
+        width:calc(100% - 2px);
+        height:calc(100% - 2px);
+        border-color:#e03131;
+    }
+}
+

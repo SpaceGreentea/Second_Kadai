@@ -33,6 +33,11 @@ header nav ul li {
   text-shadow: 1px 1px 2px rgba(18, 18, 18, 0.16);
   padding-right: 2.109375vw;
 }
+@media (max-width: 767px) {
+  header nav ul li {
+    font-size: 3.84vw;
+  }
+}
 header nav ul {
   display: flex;
   justify-content: right;
@@ -62,6 +67,11 @@ header a:hover {
   width: 100%;
   z-index: -1;
 }
+@media (max-width: 767px) {
+  .menu .menu_parallax {
+    height: 25.0666666667vw;
+  }
+}
 .menu .menu_parallax h2 {
   font-family: Arial;
   font-weight: bold;
@@ -74,11 +84,38 @@ header a:hover {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+@media (max-width: 767px) {
+  .menu .menu_parallax h2 {
+    font-size: 8.5333333333vw;
+  }
+}
 .menu .menu_list_area {
   height: 69.21875vw;
   background-color: #fff;
   display: flex;
   margin-top: 7.5vw;
+}
+@media (max-width: 767px) {
+  .menu .menu_list_area {
+    height: auto;
+    display: block;
+    margin-bottom: 29.8666666667vw;
+  }
+}
+.menu .menu_list_area .coffee_menu {
+  text-align: center;
+  padding-left: 16.484375vw;
+  padding-right: 3.8671875vw;
+  border-right: 1px solid #333;
+  height: 50.5078125vw;
+}
+@media (max-width: 767px) {
+  .menu .menu_list_area .coffee_menu {
+    padding-left: 4.2666666667vw;
+    padding-right: 4.2666666667vw;
+    border-right: none;
+    height: auto;
+  }
 }
 .menu .menu_list_area .coffee_menu h3 {
   font-family: Arial;
@@ -88,11 +125,20 @@ header a:hover {
   background: linear-gradient(transparent 85%, #e03131 85%);
   padding-bottom: 1.328125vw;
   display: inline-block;
-  margin-left: 25.546875vw;
+}
+@media (max-width: 767px) {
+  .menu .menu_list_area .coffee_menu h3 {
+    font-size: 5.3333333333vw;
+  }
 }
 .menu .menu_list_area .coffee_menu .menu_list_left {
-  margin-left: 16.484375vw;
   margin-top: 5.78125vw;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .menu .menu_list_area .coffee_menu .menu_list_left {
+    margin-top: 7.7333333333vw;
+  }
 }
 .menu .menu_list_area .coffee_menu .menu_name_price {
   display: flex;
@@ -107,20 +153,35 @@ header a:hover {
   font-size: 1.125vw;
   color: #383e45;
 }
+@media (max-width: 767px) {
+  .menu .menu_list_area .coffee_menu .menu_dotted {
+    width: 90.4vw;
+    font-size: 3.84vw;
+  }
+}
 .menu .menu_list_area .coffee_menu .menu_price {
   margin-top: 3px;
-  margin-left: 1.2109375vw;
   font-family: Meiryo;
   font-weight: normal;
   font-size: 1.125vw;
   color: #383e45;
 }
-.menu .menu_list_area .coffee_menu_centerline {
-  width: 1px;
-  height: 50.5078125vw;
-  background: transparent;
-  border-right: 1px solid #000;
-  margin-left: 3.8671875vw;
+@media (max-width: 767px) {
+  .menu .menu_list_area .coffee_menu .menu_price {
+    font-size: 3.84vw;
+  }
+}
+.menu .menu_list_area .food_other_menu {
+  text-align: center;
+  padding-left: 3.5546875vw;
+  padding-right: 15.3125vw;
+}
+@media (max-width: 767px) {
+  .menu .menu_list_area .food_other_menu {
+    padding-left: 4.2666666667vw;
+    padding-right: 4.2666666667vw;
+    margin-top: 10.9333333333vw;
+  }
 }
 .menu .menu_list_area .food_other_menu h3 {
   font-family: Arial;
@@ -130,11 +191,20 @@ header a:hover {
   background: linear-gradient(transparent 85%, #e03131 85%);
   padding-bottom: 1.328125vw;
   display: inline-block;
-  margin-left: 14.1796875vw;
+}
+@media (max-width: 767px) {
+  .menu .menu_list_area .food_other_menu h3 {
+    font-size: 5.3333333333vw;
+  }
 }
 .menu .menu_list_area .food_other_menu .menu_list_right_top {
-  margin-left: 3.5546875vw;
   margin-top: 5.78125vw;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .menu .menu_list_area .food_other_menu .menu_list_right_top {
+    margin-top: 7.7333333333vw;
+  }
 }
 .menu .menu_list_area .food_other_menu .menu_name_price {
   display: flex;
@@ -149,20 +219,188 @@ header a:hover {
   font-size: 1.125vw;
   color: #383e45;
 }
+@media (max-width: 767px) {
+  .menu .menu_list_area .food_other_menu .menu_dotted {
+    width: 90.4vw;
+    font-size: 3.84vw;
+  }
+}
 .menu .menu_list_area .food_other_menu .menu_price {
   margin-top: 3px;
-  margin-left: 1.2109375vw;
   font-family: Meiryo;
   font-weight: normal;
   font-size: 1.125vw;
   color: #383e45;
 }
+@media (max-width: 767px) {
+  .menu .menu_list_area .food_other_menu .menu_price {
+    font-size: 3.84vw;
+  }
+}
 .menu .menu_list_area .food_other_menu .menu_list_right_bottom {
-  margin-left: 3.5546875vw;
   margin-top: 5.78125vw;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .menu .menu_list_area .food_other_menu .menu_list_right_bottom {
+    margin-top: 7.7333333333vw;
+  }
 }
 .menu .menu_list_area .food_other_menu .other {
   margin-top: 5.15625vw;
+}
+@media (max-width: 767px) {
+  .menu .menu_list_area .food_other_menu .other {
+    margin-top: 10.9333333333vw;
+  }
+}
+
+.about {
+  text-align: center;
+}
+.about .about_parallax {
+  height: 23.4375vw;
+  background-image: url("../img/jonathan-borba-vk2Xwf23rOQ-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  content: "";
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  margin-bottom: 6.484375vw;
+}
+@media (max-width: 767px) {
+  .about .about_parallax {
+    height: 25.0666666667vw;
+  }
+}
+.about .about_parallax h2 {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 5.625vw;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .about .about_parallax h2 {
+    font-size: 8.5333333333vw;
+  }
+}
+.about h3 {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 3.125vw;
+  color: #000;
+  background: linear-gradient(transparent 85%, #e03131 85%);
+  padding-bottom: 1.328125vw;
+  display: inline-block;
+  margin-bottom: 6.953125vw;
+}
+@media (max-width: 767px) {
+  .about h3 {
+    font-size: 5.3333333333vw;
+  }
+}
+.about .about_sentence_area {
+  width: 71.953125vw;
+  height: 30vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .about .about_sentence_area {
+    width: 84.2666666667vw;
+    height: auto;
+    display: block;
+  }
+}
+.about .about_sentence {
+  width: 33.59375vw;
+  font-family: Meiryo;
+  font-weight: normal;
+  font-size: 1.125vw;
+  line-height: 2;
+  text-align: left;
+  color: #383e45;
+}
+@media (max-width: 767px) {
+  .about .about_sentence {
+    width: 84.2666666667vw;
+    font-size: 3.84vw;
+    margin-bottom: 5.3333333333vw;
+  }
+}
+.about .about_button {
+  font-family: Meiryo;
+  font-weight: normal;
+  font-size: 1.125vw;
+  color: #383e45;
+  margin-bottom: 11.71875vw;
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+  /*ボタンの形状*/
+  color: #383e45;
+  padding: 15px 35px;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
+@media (max-width: 767px) {
+  .about .about_button {
+    font-size: 3.84vw;
+    margin-bottom: 21.3333333333vw;
+    padding: 30px 70px;
+  }
+}
+.about .about_button::before,
+.about .about_button::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  /*事前に出現させる線の形状*/
+  border: solid #e03131;
+  width: 1.953125vw;
+  height: 1.953125vw;
+  /*アニメーションの指定*/
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  .about .about_button::before,
+  .about .about_button::after {
+    width: 8.5333333333vw;
+    height: 6.6666666667vw;
+  }
+}
+.about .about_button::before {
+  /*事前に出現させる線の位置*/
+  top: 0;
+  left: 0;
+  /*事前に出現させる線の形状*/
+  border-width: 2px 0 0 2px;
+}
+.about .about_button::after {
+  /*事前に出現させる線の位置*/
+  bottom: 0;
+  right: 0;
+  /*事前に出現させる線の形状*/
+  border-width: 0 2px 2px 0;
+}
+.about .about_button:hover::before,
+.about .about_button:hover::after {
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border-color: #e03131;
 }
 
 body {
