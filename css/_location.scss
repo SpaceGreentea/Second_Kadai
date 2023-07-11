@@ -1,0 +1,108 @@
+@mixin sp {
+    @media(max-width: 767px) {
+        @content;
+    }
+}
+
+.location {
+    text-align: center;
+
+    .location_parallax {
+        height: 23.4375vw;
+        background-image: url("../img/jonathan-borba-vk2Xwf23rOQ-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        content: "";
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+        margin-bottom: 6.484375vw;
+
+        @include sp {
+            height: 25.066666666666667vw;
+        }
+
+        h2 {
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 5.625vw;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+
+            @include sp {
+                font-size: 8.533333333333333vw;
+            }
+        }
+    }
+
+    h3 {
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 3.125vw;
+        color: #000;
+        background: linear-gradient(transparent 85%, #e03131 85%);
+        padding-bottom: 1.328125vw;
+        display: inline-block;
+        margin-bottom: 6.953125vw;
+
+        @include sp {
+            font-size: 5.333333333333333vw;
+        }
+    }
+
+    .store_map iframe {
+        width: 75.703125vw;
+        height: 31.25vw;
+        padding-left: 16px;
+        padding-right: 16px;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+        @include sp {
+            width: 91.466666666666667vw;
+            height: 108.533333333333333vw;
+        }
+    }
+
+    .store_infomation {
+        width: 75.703125vw;
+        margin: 0 12.1875vw;
+    }
+
+    .store_infomation p {
+        font-family: Arial;
+        font-weight: normal;
+        font-size: 1.125vw;
+        line-height: 1.694444444444444;
+        text-align: left;
+        color: #383e45;
+
+        @include sp {
+            font-size: 3.84vw;
+        }
+    }
+
+    .store_adress {
+        padding-top: 1.71875vw;
+    }
+
+    .store_business_day_time {
+        padding-top: 1.171875vw;
+    }
+
+    .store_tel {
+        padding-top: 1.171875vw;
+    }
+}

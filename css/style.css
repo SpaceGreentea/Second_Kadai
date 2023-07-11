@@ -403,6 +403,121 @@ header a:hover {
   border-color: #e03131;
 }
 
+.location {
+  text-align: center;
+}
+.location .location_parallax {
+  height: 23.4375vw;
+  background-image: url("../img/jonathan-borba-vk2Xwf23rOQ-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  content: "";
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  margin-bottom: 6.484375vw;
+}
+@media (max-width: 767px) {
+  .location .location_parallax {
+    height: 25.0666666667vw;
+  }
+}
+.location .location_parallax h2 {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 5.625vw;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .location .location_parallax h2 {
+    font-size: 8.5333333333vw;
+  }
+}
+.location h3 {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 3.125vw;
+  color: #000;
+  background: linear-gradient(transparent 85%, #e03131 85%);
+  padding-bottom: 1.328125vw;
+  display: inline-block;
+  margin-bottom: 6.953125vw;
+}
+@media (max-width: 767px) {
+  .location h3 {
+    font-size: 5.3333333333vw;
+  }
+}
+.location .store_map iframe {
+  width: 75.703125vw;
+  height: 31.25vw;
+  padding-left: 16px;
+  padding-right: 16px;
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+@media (max-width: 767px) {
+  .location .store_map iframe {
+    width: 91.4666666667vw;
+    height: 108.5333333333vw;
+  }
+}
+.location .store_infomation {
+  width: 75.703125vw;
+  margin: 0 12.1875vw;
+}
+.location .store_infomation p {
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 1.125vw;
+  line-height: 1.6944444444;
+  text-align: left;
+  color: #383e45;
+}
+@media (max-width: 767px) {
+  .location .store_infomation p {
+    font-size: 3.84vw;
+  }
+}
+.location .store_adress {
+  padding-top: 1.71875vw;
+}
+.location .store_business_day_time {
+  padding-top: 1.171875vw;
+}
+.location .store_tel {
+  padding-top: 1.171875vw;
+}
+
+footer {
+  font-family: Meiryo;
+  font-weight: normal;
+  font-size: 0.78125vw;
+  text-align: center;
+  color: #383e45;
+  margin-top: 15.078125vw;
+  margin-bottom: 0.9375vw;
+}
+@media (max-width: 767px) {
+  footer {
+    font-size: 2.6666666667vw;
+    margin-top: 40.2666666667vw;
+    margin-bottom: 3.2vw;
+  }
+}
+
 body {
   font-family: "Helvetica Neue" 、 "Arial" 、 "Hiragino Sans" 、 "Hiragino Kaku Gothic ProN" 、 "Meiryo" 、sans-serif;
 }/*# sourceMappingURL=style.css.map */
