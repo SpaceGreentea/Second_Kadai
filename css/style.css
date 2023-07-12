@@ -461,8 +461,6 @@ header a:hover {
 .location .store_map iframe {
   width: 75.703125vw;
   height: 31.25vw;
-  padding-left: 16px;
-  padding-right: 16px;
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
@@ -476,7 +474,12 @@ header a:hover {
 }
 .location .store_infomation {
   width: 75.703125vw;
-  margin: 0 12.1875vw;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .location .store_infomation {
+    width: 91.4666666667vw;
+  }
 }
 .location .store_infomation p {
   font-family: Arial;

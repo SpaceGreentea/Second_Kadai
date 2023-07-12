@@ -14,9 +14,9 @@
         <h1>COFFEE</h1>
         <nav>
             <ul>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">LOCATION</a></li>
+                <li><a href="#menu_scroll">MENU</a></li>
+                <li><a href="#about_scroll">ABOUT</a></li>
+                <li><a href="#location_scroll">LOCATION</a></li>
             </ul>
         </nav>
     </header>
@@ -24,7 +24,7 @@
 
     <main>
       <!-- メニュー ここから -->
-      <div class="menu">
+      <div class="menu" id="menu_scroll">
         <div class="menu_parallax">
           <h2>MENU</h2>
         </div>
@@ -112,7 +112,7 @@
       </div>
       <!-- メニュー ここまで -->
       <!-- ABOUT ここから -->
-      <div class="about">
+      <div class="about" id="about_scroll">
         <div class="about_parallax">
           <h2>ABOUT</h2>
         </div>
@@ -127,7 +127,7 @@
       </div>
       <!-- ABOUT ここまで -->
       <!-- LOCATION ここから -->
-      <div class="location">
+      <div class="location" id="location_scroll">
         <div class="location_parallax">
           <h2>LOCATION</h2>
         </div>
@@ -148,6 +148,8 @@
       </footer>
       <!-- footer ここまで -->
     </main>
-
+    <!-- jsファイルの読み込み -->
+    <script src="js/polyfile.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

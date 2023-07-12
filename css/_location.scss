@@ -62,8 +62,6 @@
     .store_map iframe {
         width: 75.703125vw;
         height: 31.25vw;
-        padding-left: 16px;
-        padding-right: 16px;
         -webkit-filter: grayscale(100%);
         -moz-filter: grayscale(100%);
         -ms-filter: grayscale(100%);
@@ -78,7 +76,11 @@
 
     .store_infomation {
         width: 75.703125vw;
-        margin: 0 12.1875vw;
+        margin: 0 auto;
+
+        @include sp {
+            width: 91.466666666666667vw;
+        }
     }
 
     .store_infomation p {
